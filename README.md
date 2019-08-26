@@ -36,10 +36,11 @@ su - ubuntu
 cd /www
 git clone git@github.com:russjohnson09/Rocket.Chat.git
 
+git checkout master
+
 ownership should be on ubuntu user
 
 cd /www/Rocket.Chat
-meteor npm install --save react react-addons-pure-render-mixin
 
 meteor npm install
 
