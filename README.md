@@ -47,6 +47,11 @@ meteor npm install
 ##Run as new ubuntu user
 meteor npm start -- --port 3001
 
+Unexpected mongo exit code null. Restarting.  
+
+
+May need to manually create database as a step here.
+
 
 
 ## Quick start for code developers
