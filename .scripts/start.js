@@ -30,6 +30,7 @@ const waitPortRelease = (port) => new Promise((resolve, reject) => {
 	});
 });
 
+//TODO update to allow environment options to be passed.
 const appOptions = {
 	env: {
 		PORT: 3000,

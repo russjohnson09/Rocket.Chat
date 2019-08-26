@@ -1,59 +1,3 @@
-# Development
-
-##Meteor
-https://www.meteor.com/install
-
-curl https://install.meteor.com/ | sh
-
-cd /www
-git clone git@github.com:russjohnson09/Rocket.Chat.git
-
-git clone https://github.com/RocketChat/Rocket.Chat.git
-cd Rocket.Chat
-meteor npm install
-
-TODO fix superuser
-meteor --allow-superuser npm start 
-
-
-## Quick start for code developers
-Prerequisites:
-
-* [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* [Meteor](https://www.meteor.com/install)
-
-> Meteor automatically installs a hidden [NodeJS v8](https://nodejs.org/download/release/v8.9.3/), [Python v2.7](https://www.python.org/downloads/release/python-270/) and [MongoDB v3.6](https://www.mongodb.com/mongodb-3.6) to be used when you run your app in development mode using the `meteor` command.
-
-Now just clone and start the app:
-
-```sh
-git clone https://github.com/RocketChat/Rocket.Chat.git
-cd Rocket.Chat
-meteor npm install
-meteor npm start
-```
-
-In order to debug the server part use [meteor debugging](https://docs.meteor.com/commandline.html#meteordebug). You should use Chrome for best debugging experience:
-
-```sh
-meteor debug
-```
-You'll find a nodejs icon in the developer console.
-
-If you are not a developer and just want to run the server - see [deployment methods](https://rocket.chat/docs/installation/paas-deployments/).
-
-## Branching Model
-
-See [Branches and Releases](https://rocket.chat/docs/developer-guides/branches-and-releases/).
-
-It is based on [Gitflow Workflow](http://nvie.com/posts/a-successful-git-branching-model/), reference section below is derived from Vincent Driessen at nvie.
-
-See also this [Git Workflows Comparison](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for more details.
-
-
-
-
-
 ![](https://user-images.githubusercontent.com/551004/43643393-884b00a4-9701-11e8-94d8-14c46d1f3660.png)
 
 <h1 align="center">
@@ -433,6 +377,42 @@ Check out [Rocket.Chat documentation](https://rocket.chat/docs/).
 ## License
 
 Note that Rocket.Chat is distributed under the [MIT License](http://opensource.org/licenses/MIT).
+
+# Development
+
+## Quick start for code developers
+Prerequisites:
+
+* [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Meteor](https://www.meteor.com/install)
+
+> Meteor automatically installs a hidden [NodeJS v8](https://nodejs.org/download/release/v8.9.3/), [Python v2.7](https://www.python.org/downloads/release/python-270/) and [MongoDB v3.6](https://www.mongodb.com/mongodb-3.6) to be used when you run your app in development mode using the `meteor` command.
+
+Now just clone and start the app:
+
+```sh
+git clone https://github.com/RocketChat/Rocket.Chat.git
+cd Rocket.Chat
+meteor npm install
+meteor npm start
+```
+
+In order to debug the server part use [meteor debugging](https://docs.meteor.com/commandline.html#meteordebug). You should use Chrome for best debugging experience:
+
+```sh
+meteor debug
+```
+You'll find a nodejs icon in the developer console.
+
+If you are not a developer and just want to run the server - see [deployment methods](https://rocket.chat/docs/installation/paas-deployments/).
+
+## Branching Model
+
+See [Branches and Releases](https://rocket.chat/docs/developer-guides/branches-and-releases/).
+
+It is based on [Gitflow Workflow](http://nvie.com/posts/a-successful-git-branching-model/), reference section below is derived from Vincent Driessen at nvie.
+
+See also this [Git Workflows Comparison](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for more details.
 
 ## Translations
 We are experimenting with [Lingohub](https://translate.lingohub.com/rocketchat/dashboard).
