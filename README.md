@@ -1,19 +1,51 @@
+#Deploy Ubuntu
+https://rocket.chat/docs/installation/manual-installation/ubuntu/
+
+#Deploy
+snap install rocketchat-server
+
+sudo service snap.rocketchat-server.rocketchat-server status
+
+sudo service snap.rocketchat-server.rocketchat-mongo status
+sudo service snap.rocketchat-server.rocketchat-caddy status
+
+
+sudo journalctl -f -u snap.rocketchat-server.rocketchat-server
+
+
+sudo service snap.rocketchat-server.rocketchat-server restart
+
+sudo snap remove rocketchat-server
+
+
+
 # Development
+
+##Add Local User and Login
+sudo adduser ubuntu
+sudo usermod -a -G www-data ubuntu
+ssh-keygen
 
 ##Meteor
 https://www.meteor.com/install
 
 curl https://install.meteor.com/ | sh
 
+su - ubuntu
+
 cd /www
 git clone git@github.com:russjohnson09/Rocket.Chat.git
 
-git clone https://github.com/RocketChat/Rocket.Chat.git
-cd Rocket.Chat
+ownership should be on ubuntu user
+
+cd /www/Rocket.Chat
+meteor npm install --save react react-addons-pure-render-mixin
+
 meteor npm install
 
-TODO fix superuser
-meteor --allow-superuser npm start 
+##Run as new ubuntu user
+meteor npm start -- --port 3001
+
 
 
 ## Quick start for code developers
